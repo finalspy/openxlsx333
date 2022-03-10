@@ -1,10 +1,10 @@
 # Purpose
 
-Test / reproduce issue [#333](https://github.com/ycphs/openxlsx/issues/333) on openxlsx R package.
+Test / reproduce issue [#333](https://github.com/ycphs/openxlsx/issues/333) on [openxlsx R package](https://github.com/ycphs/openxlsx/).
 
 # Docker image 
 
-Docker image is publicly available on dockerhub.com
+Docker image is publicly available on [dockerhub.com](https://hub.docker.com/repository/docker/finalspy/openxlsx333)
 
 # Build and Run yourself
 
@@ -24,7 +24,7 @@ After you built the image sinply run :
     ./run.sh
 ```
 
-# Descriptio nof the problem
+# Description of the problem
 
 The files should conform to the ACLs of the directory they are written to.
 

@@ -26,5 +26,4 @@ ADD entrypoint.sh /entrypoint
 ADD writexl.R .
 ADD openxlsx.R .
 
-#CMD bash
 ENTRYPOINT /entrypoint
