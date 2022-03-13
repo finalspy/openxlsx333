@@ -5,11 +5,13 @@ RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
         libxml2-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-    
+
 RUN chmod 777 /usr/local/lib/R/site-library && \
     install2.r --error --skipinstalled \
-        writexl \
-        openxlsx
+        writexl
+
+ADD ./install_openxlsx.R .
+RUN Rscript install_openxlsx.R
 
 RUN useradd -m my_user && \
     useradd -m ssh_user && \
