@@ -1,4 +1,5 @@
 #!/bin/bash
+umask 0002
 setfacl -m u::rwx,u:ssh_user:rwx,g::---,g:admin_group:rwx,o::--- /target_folder
 setfacl -d -m u::rwx,u:ssh_user:rwx,g::---,g:admin_group:rwx,o::--- /target_folder
 
