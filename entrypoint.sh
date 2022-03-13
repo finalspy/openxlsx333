@@ -1,6 +1,9 @@
 #!/bin/bash
+setfacl -m u::rwx,u:ssh_user:rwx,g::---,g:admin_group:rwx,o::--- /target_folder
+setfacl -d -m u::rwx,u:ssh_user:rwx,g::---,g:admin_group:rwx,o::--- /target_folder
 
+touch /target_folder/reference.file
 Rscript writexl.R > /dev/null
 Rscript openxlsx.R > /dev/null
 
-ls -al /target_folder
+ls -l /target_folder
